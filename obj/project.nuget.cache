@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zTAnIZu0MweE/UHvaNWv4OnV1uQwSp2IzV76IikOIDirdyCJ1Ls6+SLTkaQu0UyrtzceFyGlfDwY5dkvn8wYAQ==",
+  "dgSpecHash": "4BttUi1el7rfjVlrWskbvq2d/HCT2hqwqg5Z2H5wkyuhaxBzmdFu+r2V4gztBxGjz3OIbqh9RlFmjj7sPAoIww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Navidad\\Desktop\\proyecto cita\\CitasMedicas\\ControlCitasMedicas.csproj",
+  "projectFilePath": "C:\\Users\\Navidad\\Desktop\\proyecto de citas\\CitasMedicas\\ControlCitasMedicas.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

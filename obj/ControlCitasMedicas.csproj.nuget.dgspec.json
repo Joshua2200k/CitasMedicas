@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Navidad\\Desktop\\proyecto cita\\CitasMedicas\\ControlCitasMedicas.csproj": {}
+    "C:\\Users\\Navidad\\Desktop\\proyecto de citas\\CitasMedicas\\ControlCitasMedicas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Navidad\\Desktop\\proyecto cita\\CitasMedicas\\ControlCitasMedicas.csproj": {
+    "C:\\Users\\Navidad\\Desktop\\proyecto de citas\\CitasMedicas\\ControlCitasMedicas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Navidad\\Desktop\\proyecto cita\\CitasMedicas\\ControlCitasMedicas.csproj",
+        "projectUniqueName": "C:\\Users\\Navidad\\Desktop\\proyecto de citas\\CitasMedicas\\ControlCitasMedicas.csproj",
         "projectName": "ControlCitasMedicas",
-        "projectPath": "C:\\Users\\Navidad\\Desktop\\proyecto cita\\CitasMedicas\\ControlCitasMedicas.csproj",
+        "projectPath": "C:\\Users\\Navidad\\Desktop\\proyecto de citas\\CitasMedicas\\ControlCitasMedicas.csproj",
         "packagesPath": "C:\\Users\\Navidad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Navidad\\Desktop\\proyecto cita\\CitasMedicas\\obj\\",
+        "outputPath": "C:\\Users\\Navidad\\Desktop\\proyecto de citas\\CitasMedicas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Navidad\\AppData\\Roaming\\NuGet\\NuGet.Config"

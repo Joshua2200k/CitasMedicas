@@ -1,104 +1,137 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
-/*
-Sistema gestionador de citas medicas
-*/
-class Program
+namespace MyApp// Note: actual namespace depends on the project name.
 {
-    static List<CitaMedica> citasMedicas = new List<CitaMedica>();
-
-    static void Main()
+    internal class Program
     {
-        Console.WriteLine("Bienvenido al sistema de control de citas médicas");
-
-        while (true)
+        class ConsultaMedica
         {
-            MostrarMenu();
-            ProcesarOpcion();
+            public string? NombrePaciente { get; set; }
+
+            public DateTime FechaCita { get; set; }
+
+            public string? RazonConsulta { get; set; }
+
+            public double CostoConsulta { get; set; }
         }
-        
-    }
 
-    static void MostrarMenu()
-    {
-        Console.Clear();
-        Console.WriteLine("***********************************************************************************************");
-        Console.WriteLine("\nBienvenido al sistema de control de citas médicas");
-        Console.WriteLine("\nMenú:");
-        Console.WriteLine("1. Agregar cita médica");
-        Console.WriteLine("2. Ver citas médicas");
-        Console.WriteLine("3. Salir");
-    }
-
-    static void ProcesarOpcion()
-    {
-        Console.Write("Seleccione una opción: ");
-        string opcion = Console.ReadLine();
-
-        switch (opcion)
+        private static List<ConsultaMedica> citas = new List<ConsultaMedica>();
+        static void Main(string[] args)
         {
-            case "1":
-                AgregarCitaMedica();
-                break;
-            case "2":
-                VerCitasMedicas();
-                break;
-            case "3":
-                Environment.Exit(0);
-                break;
-            default:
-                Console.WriteLine("Opción no válida. Inténtelo de nuevo.");
-                break;
+            Console.WriteLine("\n---------CITAS DE CLINCIA DENTISTA---------------");
+            int opcion;
+            do
+            {
+                Console.WriteLine("1. Agregar una nueva cita");
+                Console.WriteLine("2. Mostrar citas");
+                Console.WriteLine("3. Salir");
+                Console.WriteLine("Seleccione una opcion");
+
+                if (int.TryParse(Console.ReadLine(), out opcion))
+                {
+                    switch (opcion)
+                    {
+                        case 1:
+                            AgregarCita();
+                            break;
+
+                        case 2:
+                            MostrarCitas();
+                            break;
+
+                        case 3:
+                            Console.WriteLine("\nSaliendo del programa");
+                            break;
+
+                        default:
+                            Console.WriteLine("Opcion no valida intentelo de nuevo");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Ingrese un numero valido");
+                }
+
+            } while (opcion != 3);
         }
-    }
-
-    static void AgregarCitaMedica()
-    {
-        Console.Write("Ingrese el nombre del paciente: ");
-        string nombre = Console.ReadLine();
-
-        Console.Write("Ingrese la fecha y hora de la cita (dd/mm/yyyy hh:mm): ");
-        if (DateTime.TryParseExact(Console.ReadLine(), "dd/MM/yyyy HH:mm", null, System.Globalization.DateTimeStyles.None, out DateTime fecha))
+        static void AgregarCita()
         {
-            CitaMedica nuevaCita = new CitaMedica(nombre, fecha);
-            citasMedicas.Add(nuevaCita);
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\n\nCita médica agregada con éxito.");
-            Console.ResetColor();
-            Console.Write("\nprima una tecla para continuar");
-            Console.ReadKey();
+            ConsultaMedica consulta = new ConsultaMedica();
+
+            Console.WriteLine($"Ingrese los datos para la cita:");
+            Console.Write("Nombre del paciente: ");
+            consulta.NombrePaciente = Convert.ToString(Console.ReadLine());
+
+            Console.Write("Fecha de la cita (DD/MM/YYYY HH:MM): ");
+            consulta.FechaCita = Convert.ToDateTime(Console.ReadLine());
+
+            Console.Write("Razon de la consulta: ");
+            consulta.RazonConsulta = Convert.ToString(Console.ReadLine());
+
+            Console.Write("Costo de la consulta: ");
+            consulta.CostoConsulta = Convert.ToDouble(Console.ReadLine());
+
+            citas.Add(consulta);
+
+            // CREAR EL NOMBRE DEL ARCHIVO SEGUN EL FORMATO ESPECIFICADO
+            string nombreArchivo = $"Cita{citas.Count:D3}_{consulta.NombrePaciente}.txt";
+            GuardarConsultaEnArchivo(consulta, nombreArchivo);
         }
-        else
+        static void GuardarConsultaEnArchivo(ConsultaMedica consulta, string nombreArchivo)
         {
-            Console.WriteLine("Formato de fecha incorrecto.");
+            // AGREGAR EL NUMERO DE ITERACION AL NOMBRE DEL ARCHIVO
+            string nombreCompleto = $"{nombreArchivo}#{consulta.NombrePaciente}.txt";
+
+            // CREAR EL CONTENIDO DEL ARCHIVO
+            string contenido = $"Nombre del paciente: {consulta.NombrePaciente}\n" +
+                               $"Fecha de cita: {consulta.FechaCita}\n" +
+                               $"Razon de Consulta: {consulta.RazonConsulta}\n" +
+                               $"Costo de consulta: {consulta.CostoConsulta}\n";
+
+            // GUARDAR EL CONTENIDO EN EL ARCHIVO
+            File.WriteAllText(nombreCompleto, contenido);
+
+            Console.WriteLine($"\nCita guardada en el archivo: {nombreCompleto}");
+
         }
-    }
 
-    static void VerCitasMedicas()
-    {
-        Console.Clear();
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("\nCitas Médicas Registradas:");
-        Console.ResetColor();
-
-        foreach (var cita in citasMedicas)
+        static void MostrarCitas()
         {
-            Console.WriteLine($"Paciente: {cita.Nombre}, Fecha: {cita.Fecha.ToString("dd/MM/yyyy HH:mm")}");
+            if (citas.Count == 0)
+            {
+                Console.WriteLine("No hay citas para mostrar.");
+                return;
+            }
+
+            Console.WriteLine("\nListas de citas");
+            for (int i = 0; i < citas.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {citas[i].NombrePaciente},{citas[i].FechaCita}");
+            }
+
+            Console.WriteLine("\nSeleccione el numerto de la cita para ver detalles: ");
+            int Seleccione = Convert.ToInt32(Console.ReadLine());
+
+            if (Seleccione >= 1 && Seleccione <= citas.Count)
+            {
+                MostrarDetallesCita(citas[Seleccione - 1]);
+            }
+            else
+            {
+                Console.WriteLine("Numero de citas no valido");
+            }
         }
-        Console.Write("");
-        Console.ReadKey();
-    }
-}
 
-class CitaMedica
-{
-    public string Nombre { get; set; }
-    public DateTime Fecha { get; set; }
-
-    public CitaMedica(string nombre, DateTime fecha)
-    {
-        Nombre = nombre;
-        Fecha = fecha;
+        static void MostrarDetallesCita(ConsultaMedica cita)
+        {
+            Console.WriteLine($"\nDetallles de la cita");
+            Console.WriteLine($"Nombre del paciente: {cita.NombrePaciente}");
+            Console.WriteLine($"Fecha de Cita: {cita.FechaCita}");
+            Console.WriteLine($"Razon de consulta: {cita.RazonConsulta}");
+            Console.WriteLine($"Costo de consulta: ${cita.CostoConsulta}");
+        }
     }
 }
