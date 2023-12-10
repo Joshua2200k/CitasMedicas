@@ -60,7 +60,9 @@ class Program
         {
             CitaMedica nuevaCita = new CitaMedica(nombre, fecha);
             citasMedicas.Add(nuevaCita);
-            Console.WriteLine("Cita médica agregada con éxito.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\n\nCita médica agregada con éxito.");
+            Console.ResetColor();
             Console.Write("Oprima una tecla para continuar");
             Console.ReadKey();
         }

@@ -12,3 +12,18 @@ C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ref
 C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.pdb
 C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.genruntimeconfig.cache
 C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ref\ControlCitasMedicas.dll
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.exe
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.deps.json
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.runtimeconfig.json
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.dll
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.pdb
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.csproj.AssemblyReference.cache
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.AssemblyInfoInputs.cache
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.AssemblyInfo.cs
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.csproj.CoreCompileInputs.cache
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.dll
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\refint\ControlCitasMedicas.dll
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.pdb
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.genruntimeconfig.cache
+C:\Desktop\Escritorio 2023\Ciclo 2-2023\programacion estrucurada\proyecto\CitasMedicas\obj\Debug\net7.0\ref\ControlCitasMedicas.dll
