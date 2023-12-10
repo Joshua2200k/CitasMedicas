@@ -63,7 +63,7 @@ class Program
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n\nCita médica agregada con éxito.");
             Console.ResetColor();
-            Console.Write("Oprima una tecla para continuar");
+            Console.Write("\nprima una tecla para continuar");
             Console.ReadKey();
         }
         else
@@ -75,13 +75,15 @@ class Program
     static void VerCitasMedicas()
     {
         Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("\nCitas Médicas Registradas:");
+        Console.ResetColor();
 
         foreach (var cita in citasMedicas)
         {
             Console.WriteLine($"Paciente: {cita.Nombre}, Fecha: {cita.Fecha.ToString("dd/MM/yyyy HH:mm")}");
         }
-        Console.Write("Oprima una tecla para continuar");
+        Console.Write("\nprima una tecla para continuar");
         Console.ReadKey();
     }
 }
