@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/*
+Sistema gestionador de citas medicas
+*/
 class Program
 {
     static List<CitaMedica> citasMedicas = new List<CitaMedica>();
