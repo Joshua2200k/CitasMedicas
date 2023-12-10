@@ -1,0 +1,14 @@
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.exe
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.deps.json
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.runtimeconfig.json
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.dll
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\bin\Debug\net7.0\ControlCitasMedicas.pdb
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.AssemblyInfoInputs.cache
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.AssemblyInfo.cs
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.csproj.CoreCompileInputs.cache
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.dll
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\refint\ControlCitasMedicas.dll
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.pdb
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ControlCitasMedicas.genruntimeconfig.cache
+C:\Users\serra\Desktop\Control de citas\ControlCitasMedicas\obj\Debug\net7.0\ref\ControlCitasMedicas.dll
