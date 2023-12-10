@@ -17,11 +17,14 @@ class Program
             MostrarMenu();
             ProcesarOpcion();
         }
+        
     }
 
     static void MostrarMenu()
     {
         Console.Clear();
+        Console.WriteLine("***********************************************************************************************");
+        Console.WriteLine("\nBienvenido al sistema de control de citas médicas");
         Console.WriteLine("\nMenú:");
         Console.WriteLine("1. Agregar cita médica");
         Console.WriteLine("2. Ver citas médicas");
@@ -83,7 +86,7 @@ class Program
         {
             Console.WriteLine($"Paciente: {cita.Nombre}, Fecha: {cita.Fecha.ToString("dd/MM/yyyy HH:mm")}");
         }
-        Console.Write("\nprima una tecla para continuar");
+        Console.Write("");
         Console.ReadKey();
     }
 }
